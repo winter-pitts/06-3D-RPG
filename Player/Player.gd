@@ -56,3 +56,5 @@ func get_input():
 	input_dir = input_dir.normalized()
 	return input_dir
 	 
+func damage():
+	queue_free()

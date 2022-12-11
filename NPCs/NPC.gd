@@ -3,9 +3,9 @@ extends KinematicBody
 onready var Dialogue = get_node("/root/Game/UI/Dialogue")
 
 var dialogue = [
-	"Welcome! There has been an outbreak of of an infection, and we are the only two survivors. "
+	"Welcome! There has been an outbreak of of an infection, and we are the only two survivors. (Press E to continue) "
 	,"Use your gun to shoot any zombies that may appear!"
-	,"Your life depends on it. (Press E to continue)"
+	,"Your life depends on it. "
 ]
 
 func _ready():

@@ -16,6 +16,7 @@ func new_position(a):
 	var pos = Vector3(0,height,0)
 	pos.x = radius * cos(a)
 	pos.z = radius * sin(a)
+	look_at(pos,Vector3(0,1,0))
 	$Tween.interpolate_property(self, "global_transform:origin", global_transform.origin, pos, speed, Tween.TRANS_EXPO, Tween.EASE_IN_OUT)
 	$Tween.start()
 	
@@ -27,5 +28,7 @@ func _on_Tween_tween_all_completed():
 	new_position(angle)
 
 
-func die():
-	queue_free()
+func _on_Area_body_entered(body):
+	pass
+	
+
