@@ -5,8 +5,8 @@ onready var Pivot = get_node("/root/Game/Player/Pivot")
 
 var velocity = Vector3()
 var gravity = -9.8
-var speed = 0.2
-var max_speed = 4
+var speed = 0.4
+var max_speed = 8
 
 var mouse_sensitivity = 0.02
 
